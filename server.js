@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 
-mongoose.connect('process.env.MONGO_URI', {
+mongoose.connect('mongodb+srv://leasyto:z2TeL479ykSSBdxc@samclus.yytjfbu.mongodb.net/?retryWrites=true&w=majority&appName=SamClus', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
