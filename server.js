@@ -19,5 +19,5 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true
 }).then(() => {
   console.log('MongoDB connected');
-  app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+  console.log('Server running');
 });
