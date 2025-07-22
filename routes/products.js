@@ -22,8 +22,8 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
 
-  // Fetch product by productId
 router.get('/:id', async (req, res) => {
   try {
     const product = await Product.findOne({ productId: req.params.id });
@@ -33,7 +33,5 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-
-
 
 module.exports = router;
